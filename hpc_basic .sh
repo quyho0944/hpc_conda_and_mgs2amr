@@ -13,11 +13,13 @@ screen -r <tên screen>
 # Tạo job 
 srun --nodes=1 --ntasks=1 --cpus-per-task=4 --mem=32G  --pty /bin/bash
 
+# trung binh 1cpu = 2G ram  (máy LULU)  
 srun --nodes=1 --ntasks=1 --cpus-per-task=16   --pty /bin/bash
 
+# tải dữ liệu không chạy tools 
 srun --nodes=1 --ntasks=1  --pty /bin/bash
 
-# See job running 
+# See jobs running 
 squeue 
 
 # Kill job 
@@ -27,6 +29,7 @@ scancel jobID
 ctrl + d
 
 # Install conda 
+
 curl -sL \
   "https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh" > \
   "Miniconda3.sh"
