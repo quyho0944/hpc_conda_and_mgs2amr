@@ -1,5 +1,4 @@
 # Đăng nhập
-
 ssh <user_name>@giangnguyen.zapto.org -p 1234
 
 # Tạo screen 
