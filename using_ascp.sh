@@ -19,5 +19,7 @@ ascp -h
 # This is public key look like and you need to asign admind to get it 
 /home/hp/local/aspera/etc/asperaweb_id_dsa.openssh
 
-# Download using ascp
-ascp -T -i /home/hp/local/aspera/etc/asperaweb_id_dsa.openssh anonftp@ftp.ncbi.nlm.nih.gov:/blast/db/nt.{000..001}.tar.gz/ ./
+#  in hpc, you can check in ~/.aspera/etc/asperaweb_id_dsa.openssh
+
+# Download database in ncbi using ascp
+ascp -T -i path/to/file/asperaweb_id_dsa.openssh anonftp@ftp.ncbi.nlm.nih.gov:/blast/db/nt.{000..001}.tar.gz/ ./
